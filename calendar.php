@@ -6,7 +6,7 @@
     $startdate = strtotime("Today");
     $enddate = strtotime("+6 months", $startdate);
     $iter = $startdate;
-    echo "<div class='calendar'><label style='color: #111111'>Year</label><form action='test.php' method='GET'><select name ='Years' id = 'Years' onChange='SelectSubCat();' required='required'>";
+    echo "<div class='calendar'><label style='color: #111111'>Year</label><form action='' method='GET'><select name ='Years' id = 'Years' onChange='SelectSubCat();' required='required'>";
     echo "<option value='' selected disabled>Choose here</option>";
     echo '<option value='.date("Y", $iter).'>'.date("Y", $iter).'</option>';
     if(date("Y",$enddate) != date("Y",$startdate))
