@@ -22,9 +22,9 @@ Please enter your GSM Number and Password to take the appointment.</p>
 if(isset($_POST["GSM"]))
 {
     $servername = getenv('DB_HOST');
-    $username = getenv('DB_USER');;
+    $username = getenv('DB_USER');
     $password = getenv('DB_PW');
-    $db = getenv('DB')
+    $db = getenv('DB');
     $scheisse = $_SESSION["Yr"].'-'.$_SESSION["Mn"].'-'.$_SESSION["Dy"];
     $conn = new mysqli($servername, $username, $password, $db);
     $gsm = $_POST['GSM'];
