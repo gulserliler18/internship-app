@@ -33,7 +33,7 @@ if(isset($_POST["GSM"]))
 
     $result = $data->get_result();
     $row = $result->fetch_assoc();
-    if (count($row)) {
+    if (!empty($row)) {
         echo "<script>alert('An account to that GSM already exists');</script>";
     }
     else {
