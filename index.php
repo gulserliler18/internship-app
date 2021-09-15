@@ -1,4 +1,3 @@
-
 <?php
     $url= $_SERVER['REQUEST_URI'];  
     session_start();  
@@ -25,45 +24,14 @@
 <body>
 <nav class="navbar">
 <?php
-    if($_GET["page"] == "home")
-    {
-        echo "<a href=$url>Homepage</a>";
-        $url = str_replace("home","calendar",$url);
-        echo "<a href=$url>Calendar</a>";
-        $url = str_replace("calendar","signup",$url);
-        echo "<a href=$url>Sign Up</a>";
-    }
-    else if($_GET["page"] == "login")
-    {
-        $pos = strpos($url, "?");
-        $url = substr($url,0,$pos);
-        $url = $url."?page=home";
-        echo "<a href=$url>Homepage</a>";
-        $url = str_replace("home","calendar",$url);
-        echo "<a href=$url>Calendar</a>";
-        $url = str_replace("calendar","signup",$url);
-        echo "<a href=$url>Sign Up</a>";
-    }
-    else if($_GET["page"] == "calendar")
-    {
-        $url = str_replace("calendar","home",$url);
-        echo "<a href=$url>Homepage</a>";
-        $url = str_replace("home","calendar",$url);
-        echo "<a href=$url>Calendar</a>";
-        $url = str_replace("calendar","signup",$url);
-        echo "<a href=$url>Sign Up</a>";
-    }
-    else if($_GET["page"] == "confirm")
-    {
-        $pos = strpos($url, "?");
-        $url = substr($url,0,$pos);
-        $url = $url."?page=home";
-        echo "<a href=$url>Homepage</a>";
-        $url = str_replace("home","calendar",$url);
-        echo "<a href=$url>Calendar</a>";
-        $url = str_replace("calendar","signup",$url);
-        echo "<a href=$url>Sign Up</a>";
-    }
+    $pos = strpos($url, "?");
+    $url = substr($url,0,$pos);
+    $url = $url."?page=home";
+    echo "<a href=$url>Homepage</a>";
+    $url = str_replace("home","calendar",$url);
+    echo "<a href=$url>Calendar</a>";
+    $url = str_replace("calendar","signup",$url);
+    echo "<a href=$url>Sign Up</a>";
 
 ?>
 </ul>
