@@ -15,10 +15,10 @@
 <?php
 if(isset($_POST["GSM"]))
 {
-    $servername = "localhost";
-    $username = "root";
-    $password = "password";
-    $db = "app";
+    $servername = getenv('DB_HOST');
+    $username = getenv('DB_USER');;
+    $password = getenv('DB_PW');
+    $db = getenv('DB')
     $conn = new mysqli($servername, $username, $password, $db);
     $gsm = $_POST['GSM'];
     $pk = $_POST['passkey'];
