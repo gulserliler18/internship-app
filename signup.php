@@ -16,9 +16,9 @@
 if(isset($_POST["GSM"]))
 {
     $servername = getenv('DB_HOST');
-    $username = getenv('DB_USER');;
+    $username = getenv('DB_USER');
     $password = getenv('DB_PW');
-    $db = getenv('DB')
+    $db = getenv('DB');
     $conn = new mysqli($servername, $username, $password, $db);
     $gsm = $_POST['GSM'];
     $pk = $_POST['passkey'];
