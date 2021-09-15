@@ -39,6 +39,7 @@ function SelectSubCat(){
     var y = d.getFullYear();
     var m = d.getMonth();
     removeAll(document.getElementById('Months'));
+    removeAll(document.getElementById('Days'));
     var opt = document.createElement('option');
     opt.value = "";
     opt.innerHTML = "Select Month";
