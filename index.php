@@ -34,7 +34,6 @@
     echo "<a href=$url>Sign Up</a>";
 
 ?>
-</ul>
 </nav>
 
 <center>
