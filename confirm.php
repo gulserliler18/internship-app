@@ -6,10 +6,10 @@
     const mons = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     echo "Taking an appointment for: Year: ". $s_year. " Month: ".mons[$s_month]. " Day: ". $s_day;
     $s_month++;
-    $servername = "localhost";
-    $username = "root";
-    $password = "password";
-    $db = "app";
+    $servername = getenv('DB_HOST');
+    $username = getenv('DB_USER');;
+    $password = getenv('DB_PW');
+    $db = getenv('DB');
     $scheisse = $s_year.'-'.$s_month.'-'.$s_day;
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);
