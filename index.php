@@ -38,6 +38,8 @@
 
 <center>
 <?php
+    ini_set("display_errors", 1);
+    error_reporting(E_ALL);
     if($_GET["page"] == "calendar")
     require "calendar.php";
     else if($_GET["page"] == "confirm")
