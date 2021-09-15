@@ -39,13 +39,13 @@
 <center>
 <?php
     if($_GET["page"] == "calendar")
-    require("calendar.php");
+    require("./calendar.php");
     else if($_GET["page"] == "confirm")
-    require("confirm.php");
+    require("./confirm.php");
     else if($_GET["page"] == "login")
-    require("login.php");
+    require("./login.php");
     else if($_GET["page"] == "signup")
-    require("signup.php");
+    require("./signup.php");
     elseif ($_GET["page"]== "home") {
         $url= $_SERVER['REQUEST_URI']; 
         echo "<div class = 'paragraph'><h1>Welcome</h1> <p>To take appointments you need an account. To sign up, click Sign Up from the bar above. If you already have an account, go to calender. Your login information will be requested upon selecting an available time.</p></div>";
