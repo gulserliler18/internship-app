@@ -39,7 +39,7 @@ if(isset($_POST["GSM"]))
 
     $result = $data->get_result();
     $row = $result->fetch_assoc();
-    if ($row['Passkey'] == $pk) {
+    if (password_verify($pk, $row['Passkey'])) {
         $data = $conn->prepare('SELECT * FROM appointment WHERE Date=? and Time=?');
         $data->bind_param('ss', $scheisse,$_SESSION["Hr"]);
         $data->execute();
