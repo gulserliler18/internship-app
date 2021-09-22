@@ -38,7 +38,7 @@ if(isset($_POST["GSM"]))
     }
     else {
         $data = $conn->prepare('insert into User (GSM, Name_Surname, Passkey) values (?,?,?);');
-        $data->bind_param('sss',$gsm,$name,$pk);
+        $data->bind_param('sss',$gsm,$name,password_hash($pk, PASSWORD_DEFAULT));
         $data->execute();
         $url= $_SERVER['REQUEST_URI']; 
         $pos = strpos($url, "?");
