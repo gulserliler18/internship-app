@@ -59,5 +59,5 @@
         <p>I'm a senior year Computer Engineering student at ITU. I'm 21 years old. Actively looking for part time or freelance opportunities. Contact: gulserliler18@itu.edu.tr</p>
     </div>
 </body>
-    <footer><center><small>&copy; 2021, Egemen Gülserliler, reach the <a href="https://github.com/gulserliler18/internship-app">source codes</a></small></center></footer>
+    <footer><small>&copy; 2021, Egemen Gülserliler, reach the <a href="https://github.com/gulserliler18/internship-app">source codes</a></small></footer>
 </html>
