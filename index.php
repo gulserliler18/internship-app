@@ -27,11 +27,11 @@
     $pos = strpos($url, "?");
     $url = substr($url,0,$pos);
     $url = $url."?page=home";
-    echo "<a class="na" href=$url>Homepage</a>";
+    echo "<a href=$url>Homepage</a>";
     $url = str_replace("home","calendar",$url);
-    echo "<a class="na" href=$url>Calendar</a>";
+    echo "<a href=$url>Calendar</a>";
     $url = str_replace("calendar","signup",$url);
-    echo "<a class="na" href=$url>Sign Up</a>";
+    echo "<a href=$url>Sign Up</a>";
 
 ?>
 </nav>
