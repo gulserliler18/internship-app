@@ -10,6 +10,11 @@ div.paragraph
 {
     width: 45em;
 }
+div.about
+{
+    width: 15em;
+    float: right;
+}
 a.na 
 {
     float: left;   
