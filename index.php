@@ -50,14 +50,11 @@
     require "signup.php";
     elseif ($_GET["page"]== "home") {
         $url= $_SERVER['REQUEST_URI']; 
-        echo "<div class = 'paragraph'><h1>Welcome</h1> <p>To take appointments you need an account. To sign up, click Sign Up from the bar above. If you already have an account, go to calender. Your login information will be requested upon selecting an available time.</p></div>";
+        echo "<div class = 'paragraph'><h1>Welcome</h1> <p>To take appointments you need an account. To sign up, click Sign Up from the bar above. If you already have an account, go to calender. Your login information will be requested upon selecting an available time.</p></div>
+    <div class='about'><h5>About Me</h5><p>I'm a senior year Computer Engineering student at ITU. I'm 21 years old. Actively looking for part time or freelance opportunities. Contact: gulserliler18@itu.edu.tr</p></div>";
     }
 ?>
 </center>
-    <div class='about'>
-        <h5>About Me</h5>
-        <p>I'm a senior year Computer Engineering student at ITU. I'm 21 years old. Actively looking for part time or freelance opportunities. Contact: gulserliler18@itu.edu.tr</p>
-    </div>
 </body>
     <footer><small>&copy; 2021, Egemen Gülserliler, reach the <a href="https://github.com/gulserliler18/internship-app">source codes</a></small></footer>
 </html>
