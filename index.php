@@ -27,12 +27,13 @@
     $pos = strpos($url, "?");
     $url = substr($url,0,$pos);
     $url = $url."?page=home";
+    $home = $url; 
     echo "<a href=$url  class='na'>Homepage</a>";
     $url = str_replace("home","calendar",$url);
     echo "<a href=$url  class='na'>Calendar</a>";
     $url = str_replace("calendar","signup",$url);
     echo "<a href=$url  class='na'>Sign Up</a>";
-    echo "<a class='na' onclick='return darkmode();'>Toggle dark mode</a>";
+    echo "<a href=$home class='na' onclick='return darkmode();'>Toggle dark mode</a>";
 
 ?>
 </nav>
