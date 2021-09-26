@@ -1,3 +1,12 @@
+body
+{
+    bacground-color:lightblue
+}
+.dark-mode {
+  background-color: lightgrey;
+  color: lightblue;
+}
+
 nav.navbar
 {
     list-style-type: none;
