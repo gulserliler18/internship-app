@@ -32,7 +32,7 @@
     echo "<a href=$url  class='na'>Calendar</a>";
     $url = str_replace("calendar","signup",$url);
     echo "<a href=$url  class='na'>Sign Up</a>";
-    echo "<a onclick='darkmode()'>Toggle dark mode</button>";
+    echo "<button onclick='darkmode()'>Toggle dark mode</button>";
 
 ?>
 </nav>
