@@ -19,7 +19,9 @@
 <head>
     <title><?php echo $_GET["page"]?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <?php
     <link rel="stylesheet" href="style.css">
+    ?>
 </head>
 <body>
 <nav class="navbar">
@@ -32,9 +34,17 @@
     echo "<a href=$url  class='na'>Calendar</a>";
     $url = str_replace("calendar","signup",$url);
     echo "<a href=$url  class='na'>Sign Up</a>";
+    echo "<button onclick='darkmode()'>Toggle dark mode</button>";
 
 ?>
 </nav>
+    
+<script>
+function darkmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
 <center>
 <?php
