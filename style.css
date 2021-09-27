@@ -43,7 +43,6 @@ div.calendar
 {
     align-items: center;
     border: rgb(0, 0, 0);
-    background-color: lightgrey;
     width: 15em;
 }
 
@@ -70,6 +69,8 @@ input{
     padding: 10px 10px 0px 10px;
     bottom: 0;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     /* Height of the footer*/ 
     height: 40px;
 }
