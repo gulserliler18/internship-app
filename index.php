@@ -33,7 +33,7 @@
     echo "<a href=$url  class='na'>Calendar</a>";
     $url = str_replace("calendar","signup",$url);
     echo "<a href=$url  class='na'>Sign Up</a>";
-    echo "<a href=$home class='na' onclick='return darkmode();'>Turn on dark mode</a>";
+    echo "<a href=$home class='na' onclick='return darkmode();'>Toggle dark mode</a>";
 
 ?>
 </nav>
@@ -42,18 +42,15 @@
  var element = document.body;
 if (localStorage.getItem("theme") === "dark") {
   element.classList.add('dark-mode');
-  a.innerHTML = "Turn off dark mode";
   }
 function darkmode() {
   if (element.classList.contains('dark-mode')) {
     element.classList.remove('dark-mode');
     localStorage.setItem("theme", "light");
-    a.innerHTML = "Turn on dark mode";
   } 
   else {
     element.classList.add('dark-mode');
     localStorage.setItem("theme", "dark");
-    a.innerHTML = "Turn off dark mode";
   }
    return false;
 }
