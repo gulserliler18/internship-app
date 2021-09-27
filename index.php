@@ -49,6 +49,10 @@ function darkmode() {
     localStorage.setItem("theme", "dark-mode");
     button.innerHTML = "Turn off dark mode";
   }
+    
+  if (localStorage.getItem("theme") === "dark") {
+  body.classList.add('dark');
+  button.innerHTML = "Turn off dark mode"
    return false;
 }
 </script>
