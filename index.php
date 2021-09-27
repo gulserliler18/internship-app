@@ -49,6 +49,7 @@ function darkmode() {
     localStorage.setItem("theme", "dark-mode");
     button.innerHTML = "Turn off dark mode";
   }
+   return false;
 }
 </script>
 
