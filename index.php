@@ -33,16 +33,22 @@
     echo "<a href=$url  class='na'>Calendar</a>";
     $url = str_replace("calendar","signup",$url);
     echo "<a href=$url  class='na'>Sign Up</a>";
-    echo "<a href=$home class='na' onclick='return darkmode();'>Toggle dark mode</a>";
+    echo "<a href=$home class='na' onclick='return darkmode();'>Turn on dark mode</a>";
 
 ?>
 </nav>
     
 <script>
 function darkmode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-   return false;
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode');
+    localStorage.setItem("theme", "light");
+    button.innerHTML = "Turn on dark mode";
+  } else {
+    body.classList.add('dark-mode');
+    localStorage.setItem("theme", "dark-mode");
+    button.innerHTML = "Turn off dark mode";
+  }
 }
 </script>
 
