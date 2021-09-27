@@ -39,20 +39,19 @@
 </nav>
     
 <script>
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add('dark-mode');
+  a.innerHTML = "Turn off dark mode";
+  }
 function darkmode() {
   if (body.classList.contains('dark-mode')) {
-    body.classList.toggle('dark-mode');
+    body.classList.remove('dark-mode');
     localStorage.setItem("theme", "light");
     a.innerHTML = "Turn on dark mode";
   } else {
-    body.classList.toggle('dark-mode');
+    body.classList.add('dark-mode');
     localStorage.setItem("theme", "dark");
     a.innerHTML = "Turn off dark mode";
-  }
-    
-  if (localStorage.getItem("theme") === "dark") {
-  body.classList.toggle('dark-mode');
-  a.innerHTML = "Turn off dark mode";
   }
    return false;
 }
