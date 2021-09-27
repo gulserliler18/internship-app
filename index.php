@@ -46,13 +46,14 @@ function darkmode() {
     button.innerHTML = "Turn on dark mode";
   } else {
     body.classList.add('dark-mode');
-    localStorage.setItem("theme", "dark-mode");
+    localStorage.setItem("theme", "dark");
     button.innerHTML = "Turn off dark mode";
   }
     
   if (localStorage.getItem("theme") === "dark") {
   body.classList.add('dark');
-  button.innerHTML = "Turn off dark mode"
+  button.innerHTML = "Turn off dark mode";
+  }
    return false;
 }
 </script>
