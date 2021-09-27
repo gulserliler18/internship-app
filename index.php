@@ -49,7 +49,8 @@ function darkmode() {
     element.classList.remove('dark-mode');
     localStorage.setItem("theme", "light");
     a.innerHTML = "Turn on dark mode";
-  } else {
+  } 
+  else {
     element.classList.add('dark-mode');
     localStorage.setItem("theme", "dark");
     a.innerHTML = "Turn off dark mode";
