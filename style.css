@@ -67,11 +67,6 @@ input{
     font-language-override: inherit;
 }
 footer {
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /* Height of the footer*/ 
-    height: 40px;
 }
